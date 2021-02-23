@@ -46,8 +46,17 @@ h2{
   height: 300px;
   background: #8a1fbe;
   border-radius: 50%;
+  animation-name: colorswitch;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes colorswitch {
+  0%   {background-color: #8a1fbe;}
+  25%  {background-color: #5068a5;}
+  50%  {background-color: #bb4772;}
+  100% {background-color: #8a1fbe;}
+}
 
 #container1{
   position: relative;
@@ -86,6 +95,9 @@ h2{
   -webkit-animation: spin-right 10s linear infinite;
   animation: spin-right 10s linear infinite;
 }
+
+
+
 
 #orbit-two {
   position: absolute;
